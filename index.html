@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Junofy</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <ul id="content"></ul>
+    <div id="bookmarklet">
+      <a href="javascript:window.open('http://junofy.lissmyr.com?url=' + this.location.href, '_blank');">
+        Junofy this!
+      </a>
+    </div>
+    <script id="row-template" type="text/x-handlebars-template">
+      {{#each albums}}
+        <li>
+          {{#each artists}}
+            <a href="{{href}}">{{name}}</a>
+          {{/each}}
+          - <a href="{{href}}">{{name}}</a>
+          </a>
+        </li>
+      {{/each}}
+    </script>
+    <script id="empty-row-template" type="text/x-handlebars-template">
+      <li class="not-found">
+        {{title}}
+      </li>
+    </script>
+    <script src="js/handlebars.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+  </body>
+</html>

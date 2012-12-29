@@ -1,0 +1,50 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  background: #373737;
+  color: #d9d9d9;
+  font-size: 18px;
+  font-family: "helvetica neue", "helvetica", arial, sans-serif;
+}
+a {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+li.not-found {
+  color: #666;
+}
+li:nth-child(odd) {
+  background: #313131;
+}
+#content,
+h1,
+#bookmarklet {
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 30px;
+}
+#bookmarklet {
+  text-align: center;
+}
+#bookmarklet a {
+  padding: 6px 10px;
+  background: -webkit-linear-gradient(top, #ededed 0%,#cacaca 100%);
+  border: 4px solid #222;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+  border-radius: 6px;
+}
